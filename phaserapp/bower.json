@@ -1,0 +1,22 @@
+{
+  "name": "jsapp",
+  "version": "0.0.0",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "1.11.2",
+    "backbone": "~1.1.2",
+    "requirejs": "~2.1.17",
+    "gsap": "~1.16.1",
+    "phaser": "~2.3.0"
+  }
+}

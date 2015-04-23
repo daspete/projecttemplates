@@ -1,12 +1,14 @@
 define([
 
-], function(){
+], function(
+
+){
     function ModuleTemplate(settings){
-        var defaults={
+        var defaults = {
 
         };
         
-        var module_template={
+        var module_template = {
             settings: {},
 
             DOM: {},
@@ -23,4 +25,4 @@ define([
     }
 
     return ModuleTemplate;
-}); 
+});

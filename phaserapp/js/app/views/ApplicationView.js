@@ -22,14 +22,10 @@ define([
 
             AbstractView.prototype.initialize.call(this);
 
-            this.render();
-        },
-        
-        render: function(){
             this.initRouter();
             this.initGame();
         },
-
+        
         setURL: function(url){
             Backbone.history.navigate('#'+url);
         },
@@ -40,9 +36,7 @@ define([
         },
 
         initGame: function(){
-            this.game = new PhaserGame({
-
-            });
+            this.game = new PhaserGame();
         }
     });
 

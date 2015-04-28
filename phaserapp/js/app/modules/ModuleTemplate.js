@@ -1,53 +1,29 @@
-(
-    function(root, factory){
-        if (typeof define === "function" && define.amd){ // AMD ready
-            define([
-                
-            ], factory);
-        }else if(typeof exports === 'object'){ // nodejs
-            module.exports=factory(
-                
-            ));
-        }else{ // NO-AMD
-            root.ModuleTemplate=factory(
-                
-            );
-        }
-    }(this, function(
+define([
+
+], function(
+
+){
+    function ModuleTemplate(settings){
+        var defaults = {
+
+        };
         
-    ){    
-        function ModuleTemplate(settings){
-            var defaults={
+        var module_template = {
+            settings: {},
 
-            };
+            DOM: {},
             
-            var module_template={
-                settings: {},
-
-                DOM: {},
+            init: function(){
+                _.bindAll.apply(_, [this].concat(_.functions(this)));
                 
-                init: function(settings, defaults){
-                    _.bindAll.apply(_, [this].concat(_.functions(this)));
-
-                    $.extend(this.settings, defaults, settings);
-
-                    this.setup();
-                },
-
-                setup: function(){
-
-                }
-            };
-            
-            if(typeof settings === "undefined"){
-                settings=defaults;
+                $.extend(this.settings, defaults, settings);
             }
+        };
+        
+        module_template.init();
+        
+        return module_template;
+    }
 
-            module_template.init(settings, defaults);
-            
-            return module_template;
-        }
-
-        return ModuleTemplate;
-    })
-);
+    return ModuleTemplate;
+});

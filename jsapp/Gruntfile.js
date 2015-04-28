@@ -5,7 +5,7 @@ module.exports=function(grunt){
             app: {
                 options: {
                     baseUrl: 'js/app', // APP BASE DIRECTORY
-                    mainConfigFile: 'js/app/init.js', // THE FILE WHERE THE MODULES PATHS ARE DEFINED
+                    mainConfigFile: 'js/app/init.js', // THE FILE WHERE THE MODULE PATHS ARE DEFINED
                     name: 'init', // THE INITIALIZE FILE
                     out: 'js/builtapp/app.js', // THE OUTPUT FILE
                     generateSourceMaps: true,
@@ -19,6 +19,6 @@ module.exports=function(grunt){
     
     grunt.loadNpmTasks('grunt-contrib-requirejs');
     
-    grunt.registerTask('default',['requirejs']); //BUILD ALL
+    grunt.registerTask('default', ['requirejs']); // BUILD ALL
 
 };

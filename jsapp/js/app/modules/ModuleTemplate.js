@@ -13,8 +13,9 @@ define([
 
             DOM: {},
             
-            init: function(settings, defaults){
+            init: function(){
                 _.bindAll.apply(_, [this].concat(_.functions(this)));
+                
                 $.extend(this.settings, defaults, settings);
             }
         };

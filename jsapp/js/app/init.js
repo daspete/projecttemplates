@@ -1,7 +1,8 @@
 var APPLICATION = APPLICATION || {};
 
 require.config({
-    urlArgs: 'cache='+(new Date()).getTime(),
+    urlArgs: 'cache_version='+(new Date()).getTime(),
+
     baseUrl: 'js/app',
 
     paths: {

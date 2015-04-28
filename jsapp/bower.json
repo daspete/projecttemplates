@@ -1,10 +1,10 @@
 {
   "name": "jsapp",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "moduleType": [
     "amd"
   ],
-  "license": "MIT",
+  "license": "ISC",
   "ignore": [
     "**/.*",
     "node_modules",

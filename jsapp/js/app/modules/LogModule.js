@@ -3,9 +3,9 @@ define([
 ], function(
 
 ){
-    function LogModule(settings){
+    function LogModule(){
         var log_module = {
-            init: function(settings, defaults){
+            init: function(){
                 _.bindAll.apply(_, [this].concat(_.functions(this)));
 
                 if(typeof window.console === 'undefined' || typeof window.console.log === 'undefined') {

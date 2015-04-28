@@ -18,10 +18,6 @@ define([
 
             AbstractView.prototype.initialize.call(this);
 
-            this.render();
-        },
-        
-        render: function(){
             this.initRouter();
         },
 

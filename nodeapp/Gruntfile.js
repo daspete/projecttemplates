@@ -4,10 +4,10 @@ module.exports=function(grunt){
         requirejs: {
             app: {
                 options: {
-                    baseUrl: 'js/app', // APP BASE DIRECTORY
-                    mainConfigFile: 'js/app/init.js', // THE FILE WHERE THE MODULE PATHS ARE DEFINED
+                    baseUrl: 'public/js/app', // APP BASE DIRECTORY
+                    mainConfigFile: 'public/js/app/init.js', // THE FILE WHERE THE MODULE PATHS ARE DEFINED
                     name: 'init', // THE INITIALIZE FILE
-                    out: 'js/builtapp/app.js', // THE OUTPUT FILE
+                    out: 'public/js/builtapp/app.js', // THE OUTPUT FILE
                     generateSourceMaps: true,
                     preserveLicenseComments: false,
                     optimize: 'uglify2' // USE THE UGLIFY ALGO TO MINIFY THE JS
